@@ -2,5 +2,5 @@
 
 <%= link_to "Back to Products", products_path %> | <%= link_to "Edit Product", edit_product_path(@product) %> | <%= link_to "Delete", @product, :confirm => "Are you sure you want to delete this product?", :method => :delete %>
 
-<p><%= @product[:name] %>: <%= @product[:price_in_cents] %></p>
+<p><%= @product[:name] %>: <%= @product.formatted_price %></p>
 	<p><%= @product[:description] %></p>

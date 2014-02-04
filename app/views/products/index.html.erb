@@ -5,6 +5,6 @@
 
 
 <% @products.each do |product| %>
-	<p><%= link_to "Product", "/products/#{product.id}" %>: <%= product[:name] %>: <%= product[:price_in_cents] %></p>
+	<p><%= link_to "Product", "/products/#{product.id}" %>: <%= product[:name] %>: <%= product.formatted_price %></p>
 	<p >Description: <%= product[:description] %></p>
 <% end %>
